@@ -1,1 +1,1 @@
-web: gunicorn harryturr_app:6970
+web: gunicorn harryturr_app:server

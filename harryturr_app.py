@@ -50,6 +50,7 @@ external_stylesheets = ["./assets/style.css"]
 styles = {"pre": {"border": "thin lightgrey solid", "overflowX": "scroll"}}
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 test_dict = []
 for i in df2.Activity_Type.unique():
@@ -619,4 +620,5 @@ def update_figure(value, activity_name, yaxis):
 # "%.1f" % distance_sum
 
 if __name__ == "__main__":
-    app.run_server(debug=False, port=6970)
+    app.run_server(debug=False)
+    #app.run_server(debug=False, port=6970)
