@@ -16,9 +16,9 @@ import react_buttons
 # import temp_react_package
 
 
-df = pd.read_csv(
-    "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv"
-)
+#df = pd.read_csv(
+#    "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv"
+#)
 
 df2 = pd.read_csv("activities_5_correct.csv")
 df2 = df2.reindex(
@@ -619,4 +619,4 @@ def update_figure(value, activity_name, yaxis):
 # "%.1f" % distance_sum
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=6970)
+    app.run_server(debug=False, port=6970)
