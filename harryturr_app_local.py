@@ -50,7 +50,6 @@ external_stylesheets = ["./assets/style.css"]
 styles = {"pre": {"border": "thin lightgrey solid", "overflowX": "scroll"}}
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
 
 test_dict = []
 for i in df2.Activity_Type.unique():
@@ -445,6 +444,7 @@ def update_test(test):
         Output("max_hr_text", "children"),
         Output("avg_pace_text", "children"),
         Output("elev_gain_text", "children")
+
     ],
     [Input("graph-with-slider", "selectedData")],
 )
@@ -619,5 +619,4 @@ def update_figure(value, activity_name, yaxis):
 # "%.1f" % distance_sum
 
 if __name__ == "__main__":
-    app.run_server(debug=False)
-    #app.run_server(debug=False, port=6970)
+    app.run_server(debug=True, port=6970)
