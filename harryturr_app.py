@@ -622,7 +622,7 @@ def display_selected_data(selectedData):
             "data": elev_traces,
             "layout": dict(
                 xaxis={"title": "time"},
-                yaxis={"title": "elevation"},
+                yaxis={"title": "elevation (m)"},
                 margin={"l": 40, "b": 40, "t": 10, "r": 10},
                 legend={"x": 0, "y": 1},
                 hovermode="closest",
@@ -633,7 +633,7 @@ def display_selected_data(selectedData):
         {
             "data": lat_lon_traces,
             "layout": dict(
-                xaxis={"title": "lattitude"},
+                xaxis={"title": "latitude"},
                 yaxis={"title": "longitude"},
                 margin={"l": 40, "b": 40, "t": 10, "r": 10},
                 legend={"x": 0, "y": 1},
