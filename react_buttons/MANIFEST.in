@@ -1,0 +1,7 @@
+include react_buttons/react_buttons.min.js
+include react_buttons/react_buttons.min.js.map
+include react_buttons/metadata.json
+include react_buttons/package-info.json
+include README.md
+include LICENSE
+include package.json

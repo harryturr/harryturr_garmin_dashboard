@@ -1,0 +1,15 @@
+Package: reactButtons
+Title: Make Plot.ly Dash component for react button https://material-ui.com/components/buttons/#contained-buttons
+Version: 0.0.1
+Authors @R: as.person(c(harrisonn griffin <griffin.harrisonn@gmail.com>))
+Description: Make Plot.ly Dash component for react button https://material-ui.com/components/buttons/#contained-buttons
+Depends: R (>= 3.0.2)
+Imports: 
+Suggests: 
+License: MIT + file LICENSE
+URL: https://github.com/harryturr/react-buttons
+BugReports: https://github.com/harryturr/react-buttons/issues
+Encoding: UTF-8
+LazyData: true
+Author: harrisonn griffin [aut]
+Maintainer: harrisonn griffin <griffin.harrisonn@gmail.com>
