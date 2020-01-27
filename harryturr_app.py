@@ -35,6 +35,7 @@ external_stylesheets = ["./assets/style.css"]
 styles = {"pre": {"border": "thin lightgrey solid", "overflowX": "scroll"}}
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app.title = "HARRYTURR"
 server = app.server
 
 # generate activity dictionary
@@ -606,7 +607,7 @@ def display_selected_data(selectedData):
             name=i,
         )
     )
-    
+
     return (
         html.Div(
             children=[
@@ -617,7 +618,6 @@ def display_selected_data(selectedData):
                 )
             ]
         ),
-       
         {
             "data": elev_traces,
             "layout": dict(
@@ -727,6 +727,7 @@ def update_figure(value, activity_name, yaxis):
         html.P(["%.0f" % time_sum]),
     )
 
+
 if __name__ == "__main__":
     app.run_server(debug=False)
-    #app.run_server(debug=False, port=6970)
+    # app.run_server(debug=False, port=6970)

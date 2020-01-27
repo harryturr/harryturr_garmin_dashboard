@@ -35,7 +35,7 @@ external_stylesheets = ["./assets/style.css"]
 styles = {"pre": {"border": "thin lightgrey solid", "overflowX": "scroll"}}
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+app.title = 'HARRYTURR'
 # generate activity dictionary
 activity_dict = []
 for i in df2.Activity_Type.unique():
