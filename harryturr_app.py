@@ -539,7 +539,7 @@ app.layout = html.Div(
                 html.P("Built by ", style={"display": "inline"}),
                 html.A("Harrisonn Griffin", href="https://harrisonngriffin.com"),
                 html.P("  |  Github repo can be found ", style={"display": "inline"}),
-                html.A("here", href="https://github.com/harryturr"),
+                html.A("here", href="https://github.com/harryturr/harryturr_garmin_dashboard"),
             ],
             id="info_conatiner",
             className="mini_container",

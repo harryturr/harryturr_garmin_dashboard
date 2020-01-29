@@ -41,7 +41,7 @@ Clicking on an activity in the top scatter plot will then generate a more detail
 * The **stats** container showed detailed metrics from the selected activity.
 
 
-For your personal use, you can download your activity .gpx data. It is easiest to export them from [Strava](https://support.strava.com/hc/en-us/articles/216918437-Exporting-your-Data-and-Bulk-Export), since chances are it is already synced there. However, if you use just Garmin Connect, [it is also possible](http://wanderingstar.github.io/2018/01/21/13-08-bulk-download-garmin-connect-gpx.html).
+For your personal use, you can download your activity .gpx data and your garmin connect activity log. It is easiest to export them from [Strava](https://support.strava.com/hc/en-us/articles/216918437-Exporting-your-Data-and-Bulk-Export), since chances are it is already synced there. However, if you use just Garmin Connect, [it is also possible](http://wanderingstar.github.io/2018/01/21/13-08-bulk-download-garmin-connect-gpx.html).
 
 For speed of running the Plot.ly dashboard at run time, it is best to convert the .gpx data into a .csv. Our app can then quickly load the .csvs into Pandas dataframes for quick real time plotting. In order to do this, you can use gpx_to_csv.py, choosing your input and output directories in the file.
 
